@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Formatação
+        run: npm run format:check
+
+      - name: Testes unitários
+        run: npm test
+
+      - name: Testes no navegador
+        # O runner do GitHub já traz o Chrome instalado.
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
+        run: npm run test:browser
+
+      - name: Build
+        run: npm run build
+
+      - name: Ícones em dia
+        # Os PNGs são versionados; o build não deve depender de rodar o gerador.
+        run: |
+          npm run icons
+          git diff --exit-code -- public/icons
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: extension-dist
+          path: dist

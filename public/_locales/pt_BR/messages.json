@@ -1,0 +1,199 @@
+{
+  "extName": {
+    "message": "Salvar elemento em PDF"
+  },
+  "extDescription": {
+    "message": "Selecione elementos de uma página e salve-os como PDF."
+  },
+  "panelHeading": {
+    "message": "Páginas do PDF"
+  },
+  "panelSubtitle": {
+    "message": "Clique em adicionar e escolha elementos na página. Cada elemento vira uma página."
+  },
+  "addElement": {
+    "message": "Adicionar elemento"
+  },
+  "stopPicking": {
+    "message": "Parar de adicionar"
+  },
+  "pickingHint": {
+    "message": "Clique nos elementos da página para adicioná-los. Esc encerra a seleção."
+  },
+  "pagesHeading": {
+    "message": "Páginas"
+  },
+  "pagesEmpty": {
+    "message": "Nenhuma página ainda. Use “Adicionar elemento” e clique no que quiser salvar."
+  },
+  "pageFallbackLabel": {
+    "message": "Elemento sem texto"
+  },
+  "clearAll": {
+    "message": "Limpar tudo"
+  },
+  "saveAsPdf": {
+    "message": "Salvar como PDF"
+  },
+  "saveHint": {
+    "message": "Vale para páginas que são uma imagem sozinha. Nunca amplia."
+  },
+  "preparing": {
+    "message": "Preparando…"
+  },
+  "moveUp": {
+    "message": "Mover página $index$ para cima",
+    "placeholders": {
+      "index": {
+        "content": "$1"
+      }
+    }
+  },
+  "moveDown": {
+    "message": "Mover página $index$ para baixo",
+    "placeholders": {
+      "index": {
+        "content": "$1"
+      }
+    }
+  },
+  "removePage": {
+    "message": "Remover página $index$",
+    "placeholders": {
+      "index": {
+        "content": "$1"
+      }
+    }
+  },
+  "pickerInstruction": {
+    "message": "Clique nos elementos que deseja salvar · Esc para encerrar"
+  },
+  "pickerPreparing": {
+    "message": "Preparando elemento… isso pode levar alguns segundos."
+  },
+  "pickerAdded": {
+    "message": "Página adicionada ao painel."
+  },
+  "errGeneric": {
+    "message": "Não foi possível concluir a ação."
+  },
+  "errNoTab": {
+    "message": "Nenhuma aba encontrada para esta ação."
+  },
+  "errUnsupportedPage": {
+    "message": "Esta página não permite seleção. Abra um site e tente novamente."
+  },
+  "errNoAccess": {
+    "message": "Não foi possível acessar esta página. Clique no ícone da extensão nesta aba para liberar o acesso — algumas páginas do Chrome não permitem extensões."
+  },
+  "errNoContentScript": {
+    "message": "A página não respondeu. Recarregue-a e tente novamente."
+  },
+  "errSelectFailed": {
+    "message": "Não foi possível selecionar o elemento."
+  },
+  "errPreparePdf": {
+    "message": "Não foi possível preparar o PDF."
+  },
+  "errEmptyCapture": {
+    "message": "Não foi possível capturar esse elemento."
+  },
+  "errNoPages": {
+    "message": "Adicione ao menos uma página antes de salvar."
+  },
+  "errBadRequest": {
+    "message": "Pedido inválido."
+  },
+  "errStorageOpen": {
+    "message": "Não foi possível abrir o armazenamento local."
+  },
+  "errStorageWrite": {
+    "message": "Falha ao armazenar a página."
+  },
+  "errStorageAborted": {
+    "message": "O armazenamento da página foi cancelado."
+  },
+  "saved": {
+    "message": "PDF gerado. Escolha onde salvar."
+  },
+  "errPdfFailed": {
+    "message": "Não foi possível gerar o PDF."
+  },
+  "errDebuggerBusy": {
+    "message": "Feche o DevTools desta aba e tente de novo: só um depurador por aba."
+  },
+  "selectorLabel": {
+    "message": "Ou adicionar em lote por seletor"
+  },
+  "selectorPlaceholder": {
+    "message": "img.chapter-img"
+  },
+  "addBySelector": {
+    "message": "Adicionar correspondentes"
+  },
+  "selectorHint": {
+    "message": "Cada elemento vira uma página, na ordem em que aparece na tela."
+  },
+  "batchWorking": {
+    "message": "Procurando e capturando…"
+  },
+  "batchAdded": {
+    "message": "$count$ páginas adicionadas.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "batchAddedOne": {
+    "message": "1 página adicionada."
+  },
+  "pickerBatchProgress": {
+    "message": "Capturando $done$ de $total$…",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "pickerBatchAdded": {
+    "message": "$count$ páginas adicionadas ao painel.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "generatingPage": {
+    "message": "Gerando página $done$ de $total$…",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "finalizingPdf": {
+    "message": "Finalizando o arquivo…"
+  },
+  "qualityLabel": {
+    "message": "Resolução das imagens"
+  },
+  "qualityOriginal": {
+    "message": "Original (sem recompressão)"
+  },
+  "qualityHigh": {
+    "message": "Alta — 300 dpi"
+  },
+  "qualityMedium": {
+    "message": "Média — 150 dpi"
+  },
+  "qualityScreen": {
+    "message": "Tela — 96 dpi"
+  }
+}

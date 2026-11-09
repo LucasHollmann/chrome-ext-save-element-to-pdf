@@ -1,0 +1,199 @@
+{
+  "extName": {
+    "message": "Save element as PDF"
+  },
+  "extDescription": {
+    "message": "Pick elements on a page and save them as a PDF."
+  },
+  "panelHeading": {
+    "message": "PDF pages"
+  },
+  "panelSubtitle": {
+    "message": "Click add and pick elements on the page. Each element becomes a page."
+  },
+  "addElement": {
+    "message": "Add element"
+  },
+  "stopPicking": {
+    "message": "Stop adding"
+  },
+  "pickingHint": {
+    "message": "Click elements on the page to add them. Esc ends the selection."
+  },
+  "pagesHeading": {
+    "message": "Pages"
+  },
+  "pagesEmpty": {
+    "message": "No pages yet. Use “Add element” and click what you want to save."
+  },
+  "pageFallbackLabel": {
+    "message": "Element without text"
+  },
+  "clearAll": {
+    "message": "Clear all"
+  },
+  "saveAsPdf": {
+    "message": "Save as PDF"
+  },
+  "saveHint": {
+    "message": "Applies to pages that are a single image. Never upscales."
+  },
+  "preparing": {
+    "message": "Preparing…"
+  },
+  "moveUp": {
+    "message": "Move page $index$ up",
+    "placeholders": {
+      "index": {
+        "content": "$1"
+      }
+    }
+  },
+  "moveDown": {
+    "message": "Move page $index$ down",
+    "placeholders": {
+      "index": {
+        "content": "$1"
+      }
+    }
+  },
+  "removePage": {
+    "message": "Remove page $index$",
+    "placeholders": {
+      "index": {
+        "content": "$1"
+      }
+    }
+  },
+  "pickerInstruction": {
+    "message": "Click the elements you want to save · Esc to finish"
+  },
+  "pickerPreparing": {
+    "message": "Preparing element… this can take a few seconds."
+  },
+  "pickerAdded": {
+    "message": "Page added to the panel."
+  },
+  "errGeneric": {
+    "message": "Could not complete the action."
+  },
+  "errNoTab": {
+    "message": "No tab found for this action."
+  },
+  "errUnsupportedPage": {
+    "message": "This page does not allow selection. Open a website and try again."
+  },
+  "errNoAccess": {
+    "message": "Could not access this page. Click the extension icon on this tab to grant access — some Chrome pages do not allow extensions."
+  },
+  "errNoContentScript": {
+    "message": "The page did not respond. Reload it and try again."
+  },
+  "errSelectFailed": {
+    "message": "Could not select the element."
+  },
+  "errPreparePdf": {
+    "message": "Could not prepare the PDF."
+  },
+  "errEmptyCapture": {
+    "message": "Could not capture that element."
+  },
+  "errNoPages": {
+    "message": "Add at least one page before saving."
+  },
+  "errBadRequest": {
+    "message": "Invalid request."
+  },
+  "errStorageOpen": {
+    "message": "Could not open local storage."
+  },
+  "errStorageWrite": {
+    "message": "Failed to store the page."
+  },
+  "errStorageAborted": {
+    "message": "Storing the page was cancelled."
+  },
+  "saved": {
+    "message": "PDF generated. Choose where to save it."
+  },
+  "errPdfFailed": {
+    "message": "Could not generate the PDF."
+  },
+  "errDebuggerBusy": {
+    "message": "Close DevTools on this tab and try again: only one debugger per tab."
+  },
+  "selectorLabel": {
+    "message": "Or add in bulk by selector"
+  },
+  "selectorPlaceholder": {
+    "message": "img.chapter-img"
+  },
+  "addBySelector": {
+    "message": "Add matches"
+  },
+  "selectorHint": {
+    "message": "Each element becomes a page, in the order it appears on screen."
+  },
+  "batchWorking": {
+    "message": "Finding and capturing…"
+  },
+  "batchAdded": {
+    "message": "$count$ pages added.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "batchAddedOne": {
+    "message": "1 page added."
+  },
+  "pickerBatchProgress": {
+    "message": "Capturing $done$ of $total$…",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "pickerBatchAdded": {
+    "message": "$count$ pages added to the panel.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "generatingPage": {
+    "message": "Generating page $done$ of $total$…",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "finalizingPdf": {
+    "message": "Finalizing the file…"
+  },
+  "qualityLabel": {
+    "message": "Image resolution"
+  },
+  "qualityOriginal": {
+    "message": "Original (no recompression)"
+  },
+  "qualityHigh": {
+    "message": "High — 300 dpi"
+  },
+  "qualityMedium": {
+    "message": "Medium — 150 dpi"
+  },
+  "qualityScreen": {
+    "message": "Screen — 96 dpi"
+  }
+}

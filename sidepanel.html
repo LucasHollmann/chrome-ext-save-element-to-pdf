@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salvar elemento em PDF</title>
+  </head>
+  <body>
+    <header class="panel-header">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">PDF</span>
+        <span class="brand-text" data-i18n="panelHeading">Páginas do PDF</span>
+      </div>
+      <p class="panel-subtitle" data-i18n="panelSubtitle">
+        Clique em adicionar e escolha elementos na página. Cada elemento vira uma página.
+      </p>
+    </header>
+
+    <div class="panel-actions">
+      <button id="pick-button" class="primary-button" type="button" data-i18n="addElement">
+        Adicionar elemento
+      </button>
+
+      <div class="selector-entry">
+        <label for="selector-input" data-i18n="selectorLabel"
+          >Ou adicionar em lote por seletor</label
+        >
+        <input
+          id="selector-input"
+          type="text"
+          spellcheck="false"
+          autocomplete="off"
+          placeholder="img.chapter-img"
+          data-i18n-attr="placeholder:selectorPlaceholder"
+        />
+        <button
+          id="selector-button"
+          class="secondary-button"
+          type="button"
+          disabled
+          data-i18n="addBySelector"
+        >
+          Adicionar correspondentes
+        </button>
+        <p class="selector-hint" data-i18n="selectorHint">
+          Cada elemento vira uma página, na ordem em que aparece na tela.
+        </p>
+      </div>
+    </div>
+
+    <p id="status" class="status" role="status" hidden></p>
+
+    <div class="pages-heading">
+      <strong data-i18n="pagesHeading">Páginas</strong>
+      <span id="page-count" class="page-count">0</span>
+      <button id="clear-button" class="link-button" type="button" hidden data-i18n="clearAll">
+        Limpar tudo
+      </button>
+    </div>
+
+    <p id="pages-empty" class="pages-empty" data-i18n="pagesEmpty">
+      Nenhuma página ainda. Use “Adicionar elemento” e clique no que quiser salvar.
+    </p>
+
+    <ol id="pages-list" class="pages-list"></ol>
+
+    <footer class="panel-footer">
+      <button id="print-button" class="primary-button" type="button" disabled data-i18n="saveAsPdf">
+        Salvar como PDF
+      </button>
+      <div class="quality-field">
+        <label for="quality-select" data-i18n="qualityLabel">Resolução das imagens</label>
+        <select id="quality-select">
+          <option value="original" data-i18n="qualityOriginal">Original (sem recompressão)</option>
+          <option value="high" data-i18n="qualityHigh">Alta — 300 dpi</option>
+          <option value="medium" data-i18n="qualityMedium">Média — 150 dpi</option>
+          <option value="screen" data-i18n="qualityScreen">Tela — 96 dpi</option>
+        </select>
+      </div>
+
+      <div
+        id="progress"
+        class="progress"
+        role="progressbar"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        aria-valuenow="0"
+        hidden
+      >
+        <div id="progress-fill" class="progress-fill"></div>
+      </div>
+      <p class="footer-hint" data-i18n="saveHint">
+        O arquivo é gerado com o tamanho de página de cada elemento.
+      </p>
+    </footer>
+
+    <script type="module" src="/src/sidepanel.js"></script>
+  </body>
+</html>

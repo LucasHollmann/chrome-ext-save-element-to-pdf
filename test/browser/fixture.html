@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fixture de captura</title>
+    <style>
+      body {
+        font-family: Georgia, serif;
+      }
+      #card {
+        padding: 11px;
+        border: 2px solid #345;
+        background: #eef;
+        color: #234;
+        font-size: 19px;
+      }
+      #card p {
+        margin: 3px 0;
+      }
+      #card .tag::before {
+        color: #0a0;
+        content: '\2713 ';
+        font-weight: 700;
+      }
+      #card .oculto {
+        display: none;
+      }
+      #card a {
+        color: #c00;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="card">
+      <p class="tag">Com pseudo-elemento</p>
+      <p class="oculto">Nao deve aparecer</p>
+      <p><a href="../rel/destino.html">link relativo</a></p>
+      <p><a href="javascript:alert(1)" onclick="alert(2)">link perigoso</a></p>
+      <p><img src="imgs/foto.png" srcset="imgs/foto.png 1x, imgs/foto2.png 2x" alt="foto" /></p>
+      <canvas id="cv" width="40" height="20"></canvas>
+      <input id="campo" type="text" />
+      <textarea id="area"></textarea>
+      <div id="host"></div>
+      <script>
+        window.__rodou = true;
+      </script>
+    </div>
+    <script>
+      const context = document.getElementById('cv').getContext('2d');
+      context.fillStyle = '#f0a';
+      context.fillRect(0, 0, 40, 20);
+      document.getElementById('campo').value = 'digitado';
+      document.getElementById('area').value = 'texto da area';
+      document
+        .getElementById('host')
+        .attachShadow({ mode: 'open' })
+        .append(
+          Object.assign(document.createElement('span'), {
+            textContent: 'conteudo do shadow',
+          }),
+        );
+    </script>
+  </body>
+</html>
